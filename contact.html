@@ -2,86 +2,59 @@
 <html lang="en-us">
 <head>
 
-    <meta charset="UTF-8">
-
-    <!--Responsive Mobile Meta Tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Contact | Suraj Patel</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-</head>
-<header>
-    <div class="nameBox">
-        <h1>Suraj Patel</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<!-- Body -->
+		<meta charset="UTF-8">
+	
+		<!--Responsive Mobile Meta Tag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>Contact | Suraj Patel</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	</head>
 <body>
-  
-  <div class="row">
-    <div class="col-sm-8" id="contact">
+	<!-- "wrapper" div for sticky footer -->
+	<div class="wrapper">
 
-    <div class="nameBox">
-        <section id="left-column">
-            <h2>Contact <h2>
-        <br>
+		<header>
+			<div id="header_block">
+				<div id="header_name_text_block"><h1 id="header_name_text">Suraj Patel</h1></div>
+				<nav>
+					<div class="nav_link"><p><a href="index.html">About</a></p></div>
+					<div class="nav_vertical_bar"></div>
+					<div class="nav_link"><p><a href="portfolio.html">Portfolio</a></p></div>
+					<div class="nav_vertical_bar"></div>
+					<div class="nav_link"><p><a href="contact.html">Contact</a></p></div>
+				</nav>
+			</div>
+		</header>
 
-    <!-- Text box/Form -->            
-        <form>
-            <lable>Name</lable>
-            <br>
-            <input type="text"
-                id="myText"
-                placeholder="Full Name ex. John Smith"/>
-        </form>
+		<div id="main_block">
+			<section>
+				<h2>Contact</h2>
+				<div id="section_grey_line"></div>
+				
+				<form>
+					<label>Name</label><br/>
+					<input type="text" name="name" placeholder="John Smith"><br/><br/>
 
-    <!-- Text box/Form -->
-        <form>
-            <lable>Email</lable>
-            <br>
-            <input type="text"
-                id="myText"
-                placeholder="example@gmail.com"/>
-        </form>
+					<label>Email</label><br/>
+					<input type="email" name="email" placeholder="example@gmail.com"><br/><br/>
 
-    <!-- Text box/Form -->
-        <form>
-            <lable for="message">Message:</lable>
-            <br>
-            <textarea name="message" 
-                        id="form-message" 
-                      cols="30" rows="10">
-            </textarea>
+					<label>Message</label><br/>
+					<textarea name="message"></textarea><br/>
 
-    <!-- Submit Button -->
-            <button type="submit" value="Submit">Submit</button>
-        </form>
-      </div>
-    </div>
-        
-    <div class="clearfix"></div>
-    </body>
+					<div id="submit_button"><input type="submit" value="Submit"></div>
+				</form>
+			</section>
+		</div>
+	
+		<!-- "push" div for sticky footer -->
+		<div class="push"></div>
+	</div>
 
-    <!-- Footer -->
-    <div class="clearfix">
-        </div>
-        
-        <div class="row"> 
-            <div class="col-md-12" id="footer" style="clear:both">© Copyright 2019 Suraj A Patel</div>
-        </div>
-    
-    
-    </div>
-    
-    </body>
-    </html>
-    
+	<footer>
+		<div id="footer_text">&copy; Copyright 2019 Suraj Patel</div>
+	</footer>
+</body>
+</html>

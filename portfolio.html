@@ -2,68 +2,70 @@
 <html lang="en-us">
 <head>
 
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
 
-    <!--Responsive Mobile Meta Tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Responsive Mobile Meta Tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Portfolio | Suraj Patel</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <title>Portfolio | Suraj Patel</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <header>
-    <div class="nameBox">
-        <h1>Suraj Patel</h1>
+    <div id="header_block">
+        <div id="header_name_text_block"><h1 id="header_name_text">Suraj Patel</h1></div>
         <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav_link"><p><a href="index.html">About</a></p></div>
+            <div class="nav_vertical_bar"></div>
+            <div class="nav_link"><p><a href="portfolio.html">Portfolio</a></p></div>
+            <div class="nav_vertical_bar"></div>
+            <div class="nav_link"><p><a href="contact.html">Contact</a></p></div>
         </nav>
     </div>
 </header>
 
 <!-- Body -->
 <body>
+    <div id="main_block">
+        <section>
+            <h2>Portfolio</h2>
+            <div id="section_grey_line"></div>
 
-<div class="row">
-    <div class="col-sm-8" id="portfolio">
-
-    <div class="nameBox">
-        <div class="col-sm-8" id="portfolio">
-            <section id="left-column">
-                <h2>Portfolio</h2>
-            <br>
-
-            <div class="portfolio-item" id="port1">
-                <a href="#"><h4>Hangman</h4></a>
+    <div id="portfolio_pic_block">
+            <div class="portfolio_pic">
+                <a href="#"><div class="portfolio_pic_text_block">Hangman</div></a>
+                <img src="assets/images/abstract.jpg" alt="Hangman">
             </div>
 
-            <div class="portfolio-item" id="port2">
-                <a href="#"><h4>RPG Game</h4></a>
+            <div class="portfolio_pic">
+                <a href="#"><div class="portfolio_pic_text_block">RPG Game</div></a>
+                <img src="assets/images/abstract2.jpg" alt="RPG Game">
             </div>
 
-            <div class="portfolio-item" id="port3">
-                <a href="#"><h4>Trivia Game</h4></a>
+            <div class="portfolio_pic">
+                <a href="#"><div class="portfolio_pic_text_block">Trivia Game</div></a>
+                <img src="assets/images/city.jpg" alt="Trivia Game">
             </div>
 
-            <div class="portfolio-item" id="port4">
-                <a href="#"><h4>Rutgers Info Widgit</h4></a>
+            <div class="portfolio_pic">
+                <a href="#"><div class="portfolio_pic_text_block">Rutgers Info Widget</div></a>
+                <img src="assets/images/nightlife.jpg" alt="Rutgers Info Widget">
             </div>
 
-            <div class="portfolio-item" id="port5">
-                <a href="#"><h4>Rock Paper Scissors</h4></a>
+            <div class="portfolio_pic">
+                <a href="#"><div class="portfolio_pic_text_block">Rock Paper Scissors</div></a>
+                <img src="assets/images/technics.jpg" alt="Rock Paper Scissors">
             </div>
         </div>
-    </div>
-    </div>
+    </section>
 
-        <div class="clearfix"></div>
-    </body>
+    <div class="push"></div>
+</div>
+</body>
 
     <!-- Footer -->
-<div class="row"> 
-        <div class="col-md-12" id="footer" style="clear:both">© Copyright 2019 Suraj A Patel</div>
-    </div>
+	<footer>
+		<div id="footer_text">&copy; Copyright 2019 Suraj Patel</div>
+	</footer>
     </html>
