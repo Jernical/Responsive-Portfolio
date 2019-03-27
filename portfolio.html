@@ -1,85 +1,65 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-        <meta charset="UTF-8”>
 
-        <!--Responsive Mobile Meta Tag-->
+    <meta charset="UTF-8">
+
+    <!--Responsive Mobile Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap Portfolio</title>
-
-    <link rel="icon" type="image/jpg" href="assets/images/selfie.jpg">
-
-        <!--Bootstrap links, CSS, JQUERY, JavaScript-->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <title>Portfolio | Suraj Patel</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<header>
+    <div class="nameBox">
+        <h1>Suraj Patel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-<!--Body-->
+<!-- Body -->
 <body>
-    <div class="container">
 
-            <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-brand">Suraj A Patel</div>
-                </div>
-        
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>  
-                    <li><a href="contact.html">Contact</a></li>                          
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
+<div class="row">
+    <div class="col-sm-8" id="portfolio">
 
-        <div class="row">
-            <div class="col-sm-8" id="portfolio">
-                <h2>Portfolio</h2>  
-                    <hr>
-                        <ul>
-                            <li>
-                                <a href="#"><img src="assets/images/abstract.jpg" height="110px"/> 
-                                <div class="portLabel">Hangman</div>   
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="assets/images/abstract2.jpg" height="110px"/> 
-                                <div class="portLabel">RPG Game</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="assets/images/city.jpg" height="110px"/> 
-                                <div class="portLabel">Trivia Game</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="assets/images/nightlife.jpg"" height="110px"/> 
-                                <div class="portLabel">Rutger Info Widget</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="assets/images/technics.jpg" height="110px"/> 
-                                <div class="portLabel">Rock Paper Scissors</div>
-                                </a>
-                            </li>
-                        </ul>  
-                    </div>
+    <div class="nameBox">
+        <div class="col-sm-8" id="portfolio">
+            <section id="left-column">
+                <h2>Portfolio</h2>
+            <br>
+
+            <div class="portfolio-item" id="port1">
+                <a href="#"><h4>Hangman</h4></a>
+            </div>
+
+            <div class="portfolio-item" id="port2">
+                <a href="#"><h4>RPG Game</h4></a>
+            </div>
+
+            <div class="portfolio-item" id="port3">
+                <a href="#"><h4>Trivia Game</h4></a>
+            </div>
+
+            <div class="portfolio-item" id="port4">
+                <a href="#"><h4>Rutgers Info Widgit</h4></a>
+            </div>
+
+            <div class="portfolio-item" id="port5">
+                <a href="#"><h4>Rock Paper Scissors</h4></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <div class="clearfix"></div>
     </body>
 
     <!-- Footer -->

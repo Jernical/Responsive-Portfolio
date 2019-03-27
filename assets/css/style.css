@@ -1,68 +1,178 @@
-body {
-	background-image: url(../images/background.jpg);
-	height: 100%;
+* {
+    box-sizing: border-box;
 }
 
-.container {
-	height: 100%;
-	margin-bottom: -10px;
+body {
+    background: url('../images/background.jpg') repeat;
+    font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    overflow: auto;
+    color: #777;
+    font-size: 24px;
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: white;
+    border-bottom: 3px solid #ccc;
+    margin-top: -8px;
+    margin-bottom: 30px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: teal;
+    color: white;
+    display: inline-block;
+    padding: 30px;
+    font-size: 30px;
+}
+
+nav {
+    width: 306px;
+    float: right;
+    margin-top: 34px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 16px;
+    padding: 0px 15px;
+    border-right: 2px solid #666666;
+    text-decoration: none;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease-out;
 }
 
 a {
-	color: #777777;
-	text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 
-
-a:visited {
-	color: #777777;
+nav ul li:last-child a {
+    border-right: none;
+    padding-right: none;
 }
 
-a:hover {
-	color: #4c4b4b;
-	text-decoration: none;
+p {
+    font-size: 19px;
+    line-height: 44px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
-.navbar-toggle .icon-bar {
-    width: 30px;
-    height: 1px;
+label {
+    font-size: 18px;
+    display: block;
 }
 
-.navbar-header {
-	text-align: center;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+input, textarea {
+    width: 100%;
+    display: block;
+    margin: 5px 0 20px 0;
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.navbar-header span {
-    padding: 2px;
-    font-size: 1.05em;
+textarea {
+    height: 440px;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+form button {
+    background: teal;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: none;
 }
 
-.navbar-default {
-    background-color: #4aaaa5;
-    border-color: #e7e7e7;
+footer {
+    background: #666666;
+    border-top: 7px solid teal;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 180px;
+    margin-bottom: -2px;
+    margin-left: -499px;
+    margin-right: -499px;
 }
 
-.navbar-default .navbar-brand {
-    color: #fff;
-    font-size: 2.0em;
-    text-align: center;	
-    padding: 15px 50px;
-    float: none;
+.footer {
+    background: #666666;
+    border-top: 7px solid teal;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 45px;
+    margin-bottom: 0px;
+    margin-left: -40px;
+    margin-right: -7px;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
+.nameBox {
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: -22px;
 }
 
-.clearfix footer {
+.inline-img {
+    float: left;
+    margin: 65px 15px 15px 0;
+    border: 1px solid #777;
+}
+
+.portfolio-item {
+    position: relative;
+    margin-bottom: 20px;
+    width: 35%;
+    float: left;
+    height: 200px;
+    margin-left: 67px;
+    margin-right: 68px;
+    margin-block-start: 40px;
+}
+
+.portfolio-item h4 {
+    background: teal;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: absolute;
+    bottom:-25px
+}
+
+.portfolio-item:nth-of-type(even) {
+    float: right;
+}
+
+.clearfix {
     display: block;
     clear: both;
-    margin-bottom: 370px;
+    margin-bottom: 75px;
+}
+
+.p2, .p3 {
+    font-size: 19px;
+    line-height: 15px;
+    margin-bottom: 0px;
+    margin-top: 37px;
 }
 
 #footer {
@@ -75,250 +185,173 @@ a:hover {
 	clear: both;
 }
 
-/***************************************
-		       INDEX.HTML
-****************************************/
-
-#about {
-	margin: 15px 13% 35px 13%;
-	background: #fff;
+#left-column, #right-column {
+    background: white;
+    padding: 25px;
+    border: 2px solid #ccc;
 }
 
-#about h2 {
-	font-size: 1.7em;
-	font-weight: bold;
-	padding: 15px 0px 0px 15px;
-	color: #4aaaa5;
+#left-column {
+    width: 960px;
+    height: 892px;
+    float: left;
 }
 
-#about hr {
-	margin-left: 15px;
-	margin-right: 15px;
+#left-column h2 {
+    font-size: 24px;
+    padding: 15px 0;
+    margin-bottom: -35px;
+    border-bottom: 2px solid #ccc;
 }
 
-#about img {
-	width: 85%;
-	height: 85%;
-	margin: 10px 7.5% 0px 7.5%;	
+#right-column {
+    width: 270px;
+    float: right;
 }
 
-#about p {
-	line-height: 150%;
-	margin-left: 15px;
-	margin-right: 15px;
-	padding-top: 10px;
-	text-align: justify; 
-	font-size: 17px;
+#right-column h3 {
+    font-size: 20px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
 }
 
-/* PORTFOLIO.HTML */
-
-ul {
-	padding: 0px;
+#right-column ul {
+    text-align: center;
 }
 
-#portfolio {
-	margin: 35px 13% 35px 13%;
-	background: #fff;
+#right-column ul li {
+    display: inline-block;
 }
 
-#portfolio h2 {
-	font-size: 1.7em;
-	font-weight: bold;
-	padding: 0px 0px 0px 15px;
-	color: #4aaaa5;
+#right-column ul li img {
+    width: 60px;
 }
 
-#portfolio hr {
-	margin-left: 15px;
-	margin-right: 15px;
+#port1 {
+    background: url('../images/abstract.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
-#portfolio li {
-	list-style: none;
-	width: 90%;
-	height: 200px;
-	margin: 15px 5% 20px 5%;
+#port2 {
+    background: url('../images/abstract2.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
-#portfolio img {
-	width: 75%;
-	height: 100%;
+#port3 {
+    background: url('../images/nightlife.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
-.portLabel {
-	color: #fff;
-	background-color: #4aaaa5;
-	line-height: 40px;
-	text-align: center;
-	position: relative;
-	bottom: 53px;
-	margin-left: 0px;
-	margin-right: 106px;
-	font-size: 20px;
+#port4 {
+    background: url('../images/city.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
-/* CONTACT.HTML */
-
-#contact {
-	margin: 35px 13% 35px 13%;
-	background: #fff;
-}
-
-#contact h2 {
-	font-size: 1.7em;
-	font-weight: bold;
-	padding: 15px 0px 0px 15px;
-	color: #4aaaa5;
-}
-
-#contact hr {
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-#contact form {
-	margin-left: 15px;
-	color: #777777;
-}
-
-#contact form input {
-	color: #777777;
-	width: 97%;
-	margin-bottom: 10px;
-	margin-top: 3px;
-}
-
-#contact span {
-	font-size: 1.1em;
-}
-
-#name {
-	height: 30px;
-	margin-bottom: 5px;
-}
-
-#name[type=text] {
-	padding-left: 5px;
-	font-size: 13px; 
-	opacity: 0.7;
-}
-
-#email[type=text] {
-	padding-left: 5px; 
-	font-size: 13px;
-	opacity: 0.7;
-}
-
-#message[type=text] {
-	line-height: 0px;
-}
-
-#email {
-	height: 30px;
-	margin-bottom: 5px;	
-}
-
-#message {
-	height: 185px;
-	margin-bottom: 10px;
-}
-
-#submit[type=submit] {
-	color: #fff;
-	width: 70px;
- 	height: 30px;
- 	background: #4aaaa5;
- 	border: none;
- 	margin-top: 5px;
- 	border-radius: 2px;
- 	font-size: 13px;
-}
-
-#submit:hover {
-	cursor: pointer;
-	background-color: #3a8783;
+#port5 {
+    background: url('../images/technics.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 /* ******************* */
 
 @media (min-width: 640px) {
 
-		/*TABLET*/
+nav {
+    height: 50px;
+    width: 100%;
+    max-width: 472px;
+}
+    
+#about {
+    margin: 15px 0% 15px 10%;
+    width: 80%;
+}
 
-	#about {
-		margin: 15px 0% 15px 10%;
-    	width: 80%;
-	}
+#about img {
+    width: 25%;;
+    margin: 5px 18px 20px 18px;
+    float: left;
+}
 
-	#about img {
-		width: 25%;;
-		margin: 5px 18px 20px 18px;
-		float: left;
-	}
+#about p {
+    padding: 0px;
+}
 
-	#about p {
-		padding: 0px;
-	}
+#contact {
+    margin: 15px 0% 15px 10%;
+    width: 80%;
+}
 
-	#contact {
-		margin: 15px 0% 15px 10%;
-    	width: 80%;
-	}
+#portfolio {
+    margin: 15px 0% 15px 10%;
+    width: 80%;
+}
 
-	#portfolio {
-		margin: 15px 0% 15px 10%;
-    	width: 80%;
-	}
+#portfolio li {
+    width: 45%;
+    margin: 10px 0px 10px 20px;
+    float: left;
+}
 
-	#portfolio li {
-		width: 45%;
-	    margin: 10px 0px 10px 20px;
-	    float: left;
-	}
-
-	#footer {
-		width: 90%;
-	    margin-left: 5%;
-		border-radius: 5px;
-		clear: both;
-	}
-
+#footer {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    clear: both;
+}
 
 }
+
 
 	/* ***************** */
 
 @media (min-width: 768px) {
 
-	#about {
-		margin: 15px -6% 60px 25%;
-    	width: 50%;
-	}
+#about {
+    margin: 15px -6% 60px 25%;
+    width: 50%;
+}
 
-	#contact {
-    	width: 50%;
-    	margin: 15px -6% 50px 25%;
+#contact {
+    width: 50%;
+    margin: 15px -6% 50px 25%;
 
-	}
+}
 
-	#portfolio {
-    	width: 50%;
-    	margin: 15px -6% 60px 25%;
+#portfolio {
+    width: 100%;
+    margin: 10px auto 16px auto;
+    max-width: 410px;
+    float: none;
+    max-height: 306px;
+}
 
-	}
+#portfolio li {
+    width: 100%;
+    margin: 10px auto 16px auto;
+    float: none;
+}
 
-	#portfolio li {
-		width: 45%;
-	}
+#footer {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 3px;
+    margin-top: 0px;
+    clear: both;
+}
 
-	#footer {
-		width: 90%;
-	    margin-left: 5%;
-		border-radius: 3px;
-		margin-top: 0px;
-		clear: both;
-	}
+input, textarea {
+    width: 450px;
+    margin-top: 7px;
+    padding: 9px;
+    font-size: 14px;
+}
 
 
 }
@@ -327,45 +360,34 @@ ul {
 
 	@media (min-width: 980px) {
 
-		#about {
-			margin: 15px -6% 60px 25%;
-			width: 50%;
-		}
-	
-		#contact {
-			width: 50%;
-			margin: 15px -6% 50px 25%;
-	
-		}
-	
-		#portfolio {
-			width: 50%;
-			margin: 15px -6% 60px 25%;
-	
-		}
-	
-		#portfolio li {
-			width: 45%;
-		}
-	
-		#footer {
-			width: 90%;
-			margin-left: 5%;
-			border-radius: 3px;
-			margin-top: 0px;
-			clear: both;
-		}
-	
-	
-	}
+#about {
+    margin: 15px -6% 60px 25%;
+    width: 50%;
+}
+
+#contact {
+    width: 50%;
+    margin: 15px -6% 50px 25%;
+
+}
+
+#portfolio {
+    width: 50%;
+    margin: 15px -6% 60px 25%;
+
+}
+
+#portfolio li {
+    width: 45%;
+}
+
+#footer {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 3px;
+    margin-top: 0px;
+    clear: both;
+}
 
 
-
-
-
-
-
-
-
-
-
+}

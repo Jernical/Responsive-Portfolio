@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <meta charset="UTF-8”>
 
-        <!--Responsive Mobile Meta Tag-->
+    <meta charset="UTF-8">
+
+    <!--Responsive Mobile Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap Portfolio</title>
-
-    <link rel="icon" type="image/jpg" href="assets/images/selfie.jpg">
-
-        <!--Bootstrap links, CSS, JQUERY, JavaScript-->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <title>Contact | Suraj Patel</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<header>
+    <div class="nameBox">
+        <h1>Suraj Patel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-<!--Body-->
+<!-- Body -->
 <body>
-  <div class="container">
-
-    <nav class="navbar navbar-default">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="navbar-brand">Suraj A Patel</div>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>                            
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-<div class="row">
+  
+  <div class="row">
     <div class="col-sm-8" id="contact">
-        <h2>Contact</h2>
-            <hr>
-                <form action="#">
-                    <span>Name</span><br>
-                    <input id="name" type="text" name="name" placeholder="John Smith">
-                    <br>
-                    <span>Email</span><br>
-                    <input id="email" type="text" name="email" placeholder="example@gmail.com">
-                    <br>
-                    <span>Message</span><br>
-                    <input id="message" type="text">
-                    <br>
-                    <input id="submit" type="submit" value="Submit">
-                </form> 
-            </div>
-        </div>
+
+    <div class="nameBox">
+        <section id="left-column">
+            <h2>Contact <h2>
+        <br>
+
+    <!-- Text box/Form -->            
+        <form>
+            <lable>Name</lable>
+            <br>
+            <input type="text"
+                id="myText"
+                placeholder="Full Name ex. John Smith"/>
+        </form>
+
+    <!-- Text box/Form -->
+        <form>
+            <lable>Email</lable>
+            <br>
+            <input type="text"
+                id="myText"
+                placeholder="example@gmail.com"/>
+        </form>
+
+    <!-- Text box/Form -->
+        <form>
+            <lable for="message">Message:</lable>
+            <br>
+            <textarea name="message" 
+                        id="form-message" 
+                      cols="30" rows="10">
+            </textarea>
+
+    <!-- Submit Button -->
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+      </div>
+    </div>
+        
+    <div class="clearfix"></div>
+    </body>
 
     <!-- Footer -->
     <div class="clearfix">
