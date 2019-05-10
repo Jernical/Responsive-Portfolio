@@ -190,7 +190,6 @@ footer {
 
 /* selectors unique to portfolio.html*/
 #portfolio_pic_block {
-	width: 588px;
 	margin-top: 40px;
 	display: flex;
 	justify-content: space-between;
@@ -198,7 +197,6 @@ footer {
 }
 
 .portfolio_pic {
-	height: 205px;
 	margin-bottom: 56px;
 	position: relative;
 }
